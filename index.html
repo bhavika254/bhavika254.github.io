@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bhavika Pawar — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -18,9 +18,9 @@
       --accent3: #6fffd4;
       --text: #e8e8f0;
       --muted: #6b6b80;
-      --font-display: 'DM Serif Display', serif;
-      --font-mono: 'DM Mono', monospace;
-      --font-ui: 'Syne', sans-serif;
+      --font-display: 'Playfair Display', serif;
+      --font-mono: 'Space Mono', monospace;
+      --font-ui: 'Plus Jakarta Sans', sans-serif;
     }
 
     html { scroll-behavior: smooth; }
@@ -135,6 +135,20 @@
       font-weight: 400;
       opacity: 0;
       animation: fadeUp 0.7s 0.6s forwards;
+    }
+    .hero-sub .word {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: wordIn 0.4s forwards;
+    }
+    @keyframes wordIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Accent word highlight */
+    .hero-sub .highlight {
+      color: var(--accent);
+      font-weight: 600;
     }
     .hero-links {
       display: flex; gap: 1rem; flex-wrap: wrap;
@@ -528,7 +542,7 @@
     <div class="hero-glow2"></div>
     <p class="hero-tag">// B.Tech Computer Science · NIIT University · 2023–2027</p>
     <h1>Bhavika<br/><em>Pawar</em></h1>
-    <p class="hero-sub">Building intelligent systems at the intersection of AI, machine learning, and software engineering. Currently working on autonomous LLM agents and computer vision.</p>
+    <p class="hero-sub" id="heroSub">CSE student specializing in <span class="highlight">AI/ML</span> — with a focus on <span class="highlight">automation</span>, <span class="highlight">data intelligence</span>, and <span class="highlight">real-world problem solving</span>.</p>
     <div class="hero-links">
       <a href="#projects" class="btn btn-primary">View Projects</a>
       <a href="https://github.com/bhavika254" target="_blank" class="btn btn-outline">GitHub</a>
@@ -548,7 +562,7 @@
         <p>I'm a <strong>Computer Science undergraduate</strong> at NIIT University with a deep interest in Artificial Intelligence, Machine Learning, Web Development, and Software Engineering.</p>
         <p>I enjoy building systems that <strong>solve real problems</strong> — from autonomous AI agents that can reason and plan, to computer vision models that understand human emotion from simple sketches.</p>
         <p>I've had hands-on industry experience as an <strong>Engineering Intern at Augnito India</strong>, a healthcare AI company, where I built Python automation pipelines using Playwright to streamline internal workflows.</p>
-        <p>Outside of tech, I'm a member of the <strong>Instills Photography Club</strong> and <strong>DebSoc</strong> at my university — I find that both creative and analytical thinking sharpen each other.</p>
+        <p>Outside of tech, I'm a member of the <strong>Instills (Photography Club)</strong> and <strong>DebSoc (Debate Society)</strong> at NIIT University — I find that both creative and analytical thinking sharpen each other.</p>
       </div>
       <div class="about-stats">
         <div class="stat-card">
@@ -746,9 +760,9 @@
     <h2 class="contact-title">Let's <em style="font-family:var(--font-display);font-style:italic;color:var(--accent)">connect</em></h2>
     <p class="contact-sub">Open to collaborations, internships, and interesting conversations about AI/ML.</p>
     <div class="contact-links">
-      <a href="mailto:bhavikapawar2510@gmail.com" class="contact-link">
+      <a href="/cdn-cgi/l/email-protection#d5b7bdb4a3bcbeb4a5b4a2b4a7e7e0e4e595b2b8b4bcb9fbb6bab8" class="contact-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        bhavikapawar2510@gmail.com
+        <span class="__cf_email__" data-cfemail="0c6e646d7a65676d7c6d7b6d7e3e393d3c4c6b616d6560226f6361">[email&#160;protected]</span>
       </a>
       <a href="https://github.com/bhavika254" target="_blank" class="contact-link">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -765,7 +779,35 @@
     <p>© 2026 Bhavika Dada Pawar &nbsp;·&nbsp; Built with HTML, CSS & JS &nbsp;·&nbsp; <span style="color:var(--accent)">bhavika254.github.io</span></p>
   </footer>
 
+
   <script>
+    // Word-by-word animation on hero subtitle
+    setTimeout(() => {
+      const sub = document.getElementById('heroSub');
+      sub.style.opacity = '1';
+      // wrap each text node word in a span
+      function wrapWords(node) {
+        if (node.nodeType === 3) {
+          const words = node.textContent.split(' ');
+          const frag = document.createDocumentFragment();
+          words.forEach((w, i) => {
+            if (!w) return;
+            const span = document.createElement('span');
+            span.className = 'word';
+            span.textContent = w;
+            frag.appendChild(span);
+            if (i < words.length - 1) frag.appendChild(document.createTextNode(' '));
+          });
+          node.parentNode.replaceChild(frag, node);
+        } else if (node.nodeType === 1 && node.nodeName !== 'SCRIPT') {
+          [...node.childNodes].forEach(wrapWords);
+        }
+      }
+      wrapWords(sub);
+      sub.querySelectorAll('.word').forEach((w, i) => {
+        w.style.animationDelay = `${0.8 + i * 0.06}s`;
+      });
+    }, 100);
 
     // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
@@ -778,11 +820,70 @@
     }, { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
 
-    // Stagger child cards on reveal
+    // Stagger child cards
     document.querySelectorAll('.projects-grid, .skills-grid, .about-stats').forEach(grid => {
-      const children = grid.children;
-      Array.from(children).forEach((child, i) => {
+      Array.from(grid.children).forEach((child, i) => {
         child.style.transitionDelay = `${i * 0.08}s`;
+      });
+    });
+
+    // Typing effect on hero tag
+    const tag = document.querySelector('.hero-tag');
+    const text = tag.textContent;
+    tag.textContent = '';
+    tag.style.opacity = '1';
+    let i = 0;
+    function typeIt() {
+      if (i < text.length) {
+        tag.textContent += text[i++];
+        setTimeout(typeIt, 38);
+      }
+    }
+    setTimeout(typeIt, 600);
+
+    // Floating particles
+    const canvas = document.createElement('canvas');
+    canvas.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.35';
+    document.body.prepend(canvas);
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+
+    const particles = Array.from({length: 55}, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.5 + 0.3,
+      dx: (Math.random() - 0.5) * 0.35,
+      dy: (Math.random() - 0.5) * 0.35,
+      alpha: Math.random() * 0.5 + 0.1
+    }));
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(124,111,255,${p.alpha})`;
+        ctx.fill();
+        p.x += p.dx; p.y += p.dy;
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    // Nav active link highlight on scroll
+    const sections = document.querySelectorAll('section, .contact-section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--accent)' : '';
       });
     });
   </script>
